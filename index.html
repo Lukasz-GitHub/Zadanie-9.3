@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie - 8.4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="newGame">New Game</button>
+        <button id="paper" data-move="paper" class="player-move">Paper</button>
+        <button id="rock" data-move="rock" class="player-move">Rock</button>
+        <button id="scissors" data-move="scissors" class="player-move">Scissors</button>
+        <div id="result">Player - 0 : 0 - Computer</div>
+        <div id='roundsNumber'></div>
+        <div id="output"></div>
+
+        <div class="overlay" id="modal-overlay">
+            <div class="modal">
+                <header>Game Resoult:</header>
+                <div class="content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Round Number</th>
+                                <th>Pplayer move</th>
+                                <th>Computer Move</th>
+                                <th>Round Winner</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                    <div class="score"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
